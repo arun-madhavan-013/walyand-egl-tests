@@ -16,4 +16,4 @@ find_package(OpenGL REQUIRED)
 
 # Include directories and link libraries
 include_directories(${WAYLAND_INCLUDE_DIRS} ${EGL_INCLUDE_DIRS} ${OPENGL_INCLUDE_DIRS})
-target_link_libraries(${BINNAME} ${WAYLAND_LIBRARIES} ${EGL_LIBRARIES} ${OPENGL_LIBRARIES})
+target_link_libraries(${BINNAME} ${WAYLAND_LIBRARIES} ${EGL_LIBRARIES} ${OPENGL_LIBRARIES} wayland-client)
